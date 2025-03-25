@@ -1,6 +1,8 @@
 package com.wezen.cleanarchitecturedemo.base
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-class MyApplication: Application() {
+@HiltAndroidApp
+class MyApplication : Application() {
 }

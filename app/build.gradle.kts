@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.dagger.hilt.android")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -50,8 +52,24 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    /*recyclerview*/
     implementation(libs.recyclerview)
 
-    implementation(project(":domain"))
-    implementation(project(":data"))
+    /*viewmodel-lifecycle*/
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    /*room-database*/
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+
+    /*hilt dagger2*/
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.android.compiler)
+
+    /*fragment - view model*/
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.fragment.ktx)
 }

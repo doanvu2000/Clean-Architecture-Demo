@@ -21,5 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Clean Architecture Demo"
 include(":app")
-include(":domain")
-include(":data")
