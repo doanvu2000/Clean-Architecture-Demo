@@ -15,7 +15,7 @@
    - repository: Implementation of Repository in domain layer
  - di: AppModule: provide injection
  - domain:
-   - repository: interface define function bussiness logic
+   - repository: interface define function business logic
    - usecase: class using function in repository to access data
  - presentation: ui and viewmodel
  - assets: assets file such as: db file, images, videos, audios, json, html, text file...
