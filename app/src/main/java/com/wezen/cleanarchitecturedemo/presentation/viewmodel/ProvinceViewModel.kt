@@ -36,21 +36,21 @@ class ProvinceViewModel @Inject constructor(private val provinceUseCase: Provinc
     fun getAllProvince() {
         viewModelScope.launch {
             AppLogger.d(TAG, "----------Get all provinces----------")
-            _allProvince.value = provinceUseCase.getProvinceUseCase.invoke()
+            _allProvince.value = provinceUseCase.getProvinces.invoke()
         }
     }
 
     fun getDistrictsByProvinceId(provinceId: Int) {
         viewModelScope.launch {
             AppLogger.d(TAG, "----------Get districts----------")
-            _districtsByProvinceId.value = provinceUseCase.getDistrictsUseCase.invoke(provinceId)
+            _districtsByProvinceId.value = provinceUseCase.getDistrictsByProvinceId.invoke(provinceId)
         }
     }
 
     fun getWardsByDistrictId(districtId: Int) {
         viewModelScope.launch {
             AppLogger.d(TAG, "----------Get wards----------")
-            _wardsByDistrictId.value = provinceUseCase.getWardsUseCase.invoke(districtId)
+            _wardsByDistrictId.value = provinceUseCase.getWardsByDistrictId.invoke(districtId)
         }
     }
 

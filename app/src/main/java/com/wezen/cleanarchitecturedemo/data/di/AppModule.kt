@@ -1,4 +1,4 @@
-package com.wezen.cleanarchitecturedemo.di
+package com.wezen.cleanarchitecturedemo.data.di
 
 import android.content.Context
 import androidx.room.Room
@@ -16,7 +16,7 @@ import javax.inject.Singleton
 
 @InstallIn(SingletonComponent::class)
 @Module
-class AppModule {
+object AppModule {
 
     @Provides
     @Singleton
@@ -41,7 +41,7 @@ class AppModule {
 
 @Module
 @InstallIn(SingletonComponent::class)
-abstract class RepositoryModule{
+abstract class RepositoryModule {
     @Binds
     @Singleton
     abstract fun bindProvinceRepository(provinceRepositoryImpl: ProvinceRepositoryImpl): ProvinceRepository
