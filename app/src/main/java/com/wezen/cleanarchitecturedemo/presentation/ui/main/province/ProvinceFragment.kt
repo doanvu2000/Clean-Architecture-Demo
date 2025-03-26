@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import com.wezen.cleanarchitecturedemo.core.common.BaseFragment
-import com.wezen.cleanarchitecturedemo.core.utils.ex.setLinearLayoutManager
+import com.wezen.cleanarchitecturedemo.core.utils.setLinearLayoutManager
 import com.wezen.cleanarchitecturedemo.databinding.FragmentProvinceBinding
 import com.wezen.cleanarchitecturedemo.presentation.viewmodel.ProvinceViewModel
 import com.wezen.cleanarchitecturedemo.presentation.ui.main.MainActivity

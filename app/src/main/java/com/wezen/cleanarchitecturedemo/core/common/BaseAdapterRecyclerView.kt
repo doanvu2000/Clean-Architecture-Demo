@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import com.wezen.cleanarchitecturedemo.core.utils.ex.tryCatch
+import com.wezen.cleanarchitecturedemo.core.utils.tryCatch
 
 abstract class BaseAdapterRecyclerView<T, VB : ViewBinding>
 @JvmOverloads constructor(dataList: MutableList<T>? = null) :

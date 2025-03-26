@@ -1,4 +1,4 @@
-package com.wezen.cleanarchitecturedemo.core.utils.ex
+package com.wezen.cleanarchitecturedemo.core.utils
 import android.content.res.Resources
 import android.util.TypedValue
 import com.wezen.cleanarchitecturedemo.BuildConfig

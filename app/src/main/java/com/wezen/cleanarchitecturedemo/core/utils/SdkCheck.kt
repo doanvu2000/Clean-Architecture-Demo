@@ -1,4 +1,4 @@
-package com.wezen.cleanarchitecturedemo.core.utils.ex
+package com.wezen.cleanarchitecturedemo.core.utils
 
 import android.os.Build
 

@@ -9,13 +9,13 @@ import com.wezen.cleanarchitecturedemo.core.utils.Constants
 import com.wezen.cleanarchitecturedemo.data.model.DistrictEntity
 import com.wezen.cleanarchitecturedemo.data.model.ProvinceEntity
 import com.wezen.cleanarchitecturedemo.data.model.WardEntity
-import com.wezen.cleanarchitecturedemo.domain.usecase.GetAllProvinceUseCase
+import com.wezen.cleanarchitecturedemo.domain.usecase.ProvinceUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ProvinceViewModel @Inject constructor(private val provinceUseCase: GetAllProvinceUseCase) :
+class ProvinceViewModel @Inject constructor(private val provinceUseCase: ProvinceUseCase) :
     ViewModel() {
     companion object {
         const val TAG = Constants.TAG
@@ -36,21 +36,21 @@ class ProvinceViewModel @Inject constructor(private val provinceUseCase: GetAllP
     fun getAllProvince() {
         viewModelScope.launch {
             AppLogger.d(TAG, "----------Get all provinces----------")
-            _allProvince.value = provinceUseCase.getAllProvince()
+            _allProvince.value = provinceUseCase.getProvinceUseCase.invoke()
         }
     }
 
     fun getDistrictsByProvinceId(provinceId: Int) {
         viewModelScope.launch {
             AppLogger.d(TAG, "----------Get districts----------")
-            _districtsByProvinceId.value = provinceUseCase.getDistrictsByProvinceId(provinceId)
+            _districtsByProvinceId.value = provinceUseCase.getDistrictsUseCase.invoke(provinceId)
         }
     }
 
     fun getWardsByDistrictId(districtId: Int) {
         viewModelScope.launch {
             AppLogger.d(TAG, "----------Get wards----------")
-            _wardsByDistrictId.value = provinceUseCase.getWardsByDistrictId(districtId)
+            _wardsByDistrictId.value = provinceUseCase.getWardsUseCase.invoke(districtId)
         }
     }
 

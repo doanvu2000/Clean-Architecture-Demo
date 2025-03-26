@@ -8,8 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.viewbinding.ViewBinding
 import com.wezen.cleanarchitecturedemo.core.utils.Constants
-import com.wezen.cleanarchitecturedemo.core.utils.ex.clickAnimation
-import com.wezen.cleanarchitecturedemo.core.utils.ex.handleBackPressed
+import com.wezen.cleanarchitecturedemo.core.utils.clickAnimation
+import com.wezen.cleanarchitecturedemo.core.utils.handleBackPressed
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

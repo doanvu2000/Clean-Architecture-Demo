@@ -1,4 +1,4 @@
-package com.wezen.dmv.base.screen
+package com.wezen.cleanarchitecturedemo.core.common
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -20,11 +20,11 @@ import com.wezen.cleanarchitecturedemo.core.utils.AppLogger
 import com.wezen.cleanarchitecturedemo.core.utils.Constants
 import com.wezen.cleanarchitecturedemo.core.utils.SharePrefUtils
 import com.wezen.cleanarchitecturedemo.core.utils.delayResetFlagPermission
-import com.wezen.cleanarchitecturedemo.core.utils.ex.clickAnimation
-import com.wezen.cleanarchitecturedemo.core.utils.ex.finishWithSlide
-import com.wezen.cleanarchitecturedemo.core.utils.ex.handleBackPressed
-import com.wezen.cleanarchitecturedemo.core.utils.ex.isInternetAvailable
-import com.wezen.cleanarchitecturedemo.core.utils.ex.registerReceiverBroadcast
+import com.wezen.cleanarchitecturedemo.core.utils.clickAnimation
+import com.wezen.cleanarchitecturedemo.core.utils.finishWithSlide
+import com.wezen.cleanarchitecturedemo.core.utils.handleBackPressed
+import com.wezen.cleanarchitecturedemo.core.utils.isInternetAvailable
+import com.wezen.cleanarchitecturedemo.core.utils.registerReceiverBroadcast
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

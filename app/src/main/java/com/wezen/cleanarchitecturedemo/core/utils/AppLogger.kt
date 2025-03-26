@@ -1,7 +1,6 @@
 package com.wezen.cleanarchitecturedemo.core.utils
 
 import android.util.Log
-import com.wezen.cleanarchitecturedemo.core.utils.ex.isDebugMode
 
 object AppLogger {
     fun i(tag: String, msg: String) {

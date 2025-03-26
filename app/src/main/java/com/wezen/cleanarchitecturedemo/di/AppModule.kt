@@ -6,6 +6,7 @@ import com.wezen.cleanarchitecturedemo.data.api.ProvinceDao
 import com.wezen.cleanarchitecturedemo.data.api.ProvinceDatabase
 import com.wezen.cleanarchitecturedemo.data.repository.ProvinceRepositoryImpl
 import com.wezen.cleanarchitecturedemo.domain.repository.ProvinceRepository
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -31,9 +32,18 @@ class AppModule {
         return provinceDatabase.provinceDao()
     }
 
-    @Provides
+//    @Provides
+//    @Singleton
+//    fun provideProvinceRepository(provinceDao: ProvinceDao): ProvinceRepository {
+//        return ProvinceRepositoryImpl(provinceDao)
+//    }
+}
+
+@Module
+@InstallIn(SingletonComponent::class)
+abstract class RepositoryModule{
+    @Binds
     @Singleton
-    fun provideProvinceRepository(provinceDao: ProvinceDao): ProvinceRepository {
-        return ProvinceRepositoryImpl(provinceDao)
-    }
+    abstract fun bindProvinceRepository(provinceRepositoryImpl: ProvinceRepositoryImpl): ProvinceRepository
+
 }

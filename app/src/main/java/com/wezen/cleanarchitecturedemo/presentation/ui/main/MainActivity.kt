@@ -9,7 +9,7 @@ import com.wezen.cleanarchitecturedemo.R
 import com.wezen.cleanarchitecturedemo.databinding.ActivityMainBinding
 import com.wezen.cleanarchitecturedemo.data.model.ProvinceEnum
 import com.wezen.cleanarchitecturedemo.presentation.viewmodel.ProvinceViewModel
-import com.wezen.dmv.base.screen.BaseActivity
+import com.wezen.cleanarchitecturedemo.core.common.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
