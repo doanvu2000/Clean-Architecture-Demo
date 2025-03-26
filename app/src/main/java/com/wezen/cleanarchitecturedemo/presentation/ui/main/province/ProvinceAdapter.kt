@@ -1,10 +1,10 @@
-package com.wezen.cleanarchitecturedemo.ui.main.province
+package com.wezen.cleanarchitecturedemo.presentation.ui.main.province
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.wezen.cleanarchitecturedemo.base.BaseAdapterRecyclerView
+import com.wezen.cleanarchitecturedemo.core.common.BaseAdapterRecyclerView
 import com.wezen.cleanarchitecturedemo.databinding.ItemProvinceBinding
-import com.wezen.cleanarchitecturedemo.domain.model.ProvinceEntity
+import com.wezen.cleanarchitecturedemo.data.model.ProvinceEntity
 
 class ProvinceAdapter : BaseAdapterRecyclerView<ProvinceEntity, ItemProvinceBinding>() {
     override fun inflateBinding(

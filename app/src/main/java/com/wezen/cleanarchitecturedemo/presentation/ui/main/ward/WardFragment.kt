@@ -1,12 +1,11 @@
-package com.wezen.cleanarchitecturedemo.ui.main.ward
+package com.wezen.cleanarchitecturedemo.presentation.ui.main.ward
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import com.wezen.cleanarchitecturedemo.base.BaseFragment
+import com.wezen.cleanarchitecturedemo.core.common.BaseFragment
 import com.wezen.cleanarchitecturedemo.core.utils.ex.setLinearLayoutManager
 import com.wezen.cleanarchitecturedemo.databinding.FragmentWardBinding
-import com.wezen.cleanarchitecturedemo.domain.model.ProvinceEnum
 import com.wezen.cleanarchitecturedemo.presentation.viewmodel.ProvinceViewModel
 import dagger.hilt.android.AndroidEntryPoint
 

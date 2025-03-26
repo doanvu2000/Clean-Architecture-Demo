@@ -1,23 +1,23 @@
-package com.wezen.cleanarchitecturedemo.ui.main.ward
+package com.wezen.cleanarchitecturedemo.presentation.ui.main.district
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.wezen.cleanarchitecturedemo.base.BaseAdapterRecyclerView
+import com.wezen.cleanarchitecturedemo.core.common.BaseAdapterRecyclerView
 import com.wezen.cleanarchitecturedemo.databinding.ItemProvinceBinding
-import com.wezen.cleanarchitecturedemo.domain.model.WardEntity
+import com.wezen.cleanarchitecturedemo.data.model.DistrictEntity
 
-class WardAdapter : BaseAdapterRecyclerView<WardEntity, ItemProvinceBinding>() {
+class DistrictAdapter: BaseAdapterRecyclerView<DistrictEntity, ItemProvinceBinding>() {
     override fun inflateBinding(
         inflater: LayoutInflater,
         parent: ViewGroup,
         viewType: Int
     ): ItemProvinceBinding {
-        return ItemProvinceBinding.inflate(inflater, parent, false)
+        return ItemProvinceBinding.inflate(inflater,parent,false)
     }
 
     override fun bindData(
         binding: ItemProvinceBinding,
-        item: WardEntity,
+        item: DistrictEntity,
         position: Int
     ) {
         binding.tvContent.text = item.nameWithType

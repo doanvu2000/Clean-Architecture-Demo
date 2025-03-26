@@ -1,4 +1,4 @@
-package com.wezen.cleanarchitecturedemo.domain.model
+package com.wezen.cleanarchitecturedemo.data.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

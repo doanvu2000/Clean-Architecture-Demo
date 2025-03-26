@@ -2,9 +2,9 @@ package com.wezen.cleanarchitecturedemo.data.api
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.wezen.cleanarchitecturedemo.domain.model.DistrictEntity
-import com.wezen.cleanarchitecturedemo.domain.model.ProvinceEntity
-import com.wezen.cleanarchitecturedemo.domain.model.WardEntity
+import com.wezen.cleanarchitecturedemo.data.model.DistrictEntity
+import com.wezen.cleanarchitecturedemo.data.model.ProvinceEntity
+import com.wezen.cleanarchitecturedemo.data.model.WardEntity
 
 @Database(
     entities = [ProvinceEntity::class, DistrictEntity::class, WardEntity::class],

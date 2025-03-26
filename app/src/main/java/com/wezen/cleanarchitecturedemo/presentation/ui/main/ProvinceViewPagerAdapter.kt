@@ -1,13 +1,13 @@
-package com.wezen.cleanarchitecturedemo.ui.main
+package com.wezen.cleanarchitecturedemo.presentation.ui.main
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.wezen.cleanarchitecturedemo.domain.model.ProvinceEnum
-import com.wezen.cleanarchitecturedemo.ui.main.district.DistrictFragment
-import com.wezen.cleanarchitecturedemo.ui.main.province.ProvinceFragment
-import com.wezen.cleanarchitecturedemo.ui.main.ward.WardFragment
+import com.wezen.cleanarchitecturedemo.data.model.ProvinceEnum
+import com.wezen.cleanarchitecturedemo.presentation.ui.main.district.DistrictFragment
+import com.wezen.cleanarchitecturedemo.presentation.ui.main.province.ProvinceFragment
+import com.wezen.cleanarchitecturedemo.presentation.ui.main.ward.WardFragment
 
 class ProvinceViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
     FragmentStateAdapter(fragmentManager, lifecycle) {

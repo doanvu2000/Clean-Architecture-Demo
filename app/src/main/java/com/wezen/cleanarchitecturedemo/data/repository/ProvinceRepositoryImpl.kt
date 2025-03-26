@@ -1,9 +1,9 @@
 package com.wezen.cleanarchitecturedemo.data.repository
 
 import com.wezen.cleanarchitecturedemo.data.api.ProvinceDao
-import com.wezen.cleanarchitecturedemo.domain.model.DistrictEntity
-import com.wezen.cleanarchitecturedemo.domain.model.ProvinceEntity
-import com.wezen.cleanarchitecturedemo.domain.model.WardEntity
+import com.wezen.cleanarchitecturedemo.data.model.DistrictEntity
+import com.wezen.cleanarchitecturedemo.data.model.ProvinceEntity
+import com.wezen.cleanarchitecturedemo.data.model.WardEntity
 import com.wezen.cleanarchitecturedemo.domain.repository.ProvinceRepository
 import javax.inject.Inject
 

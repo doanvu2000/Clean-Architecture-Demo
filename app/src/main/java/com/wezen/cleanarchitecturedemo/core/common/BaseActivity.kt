@@ -15,7 +15,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.viewbinding.ViewBinding
-import com.wezen.cleanarchitecturedemo.base.MyApplication
+import com.wezen.cleanarchitecturedemo.presentation.MyApplication
 import com.wezen.cleanarchitecturedemo.core.utils.AppLogger
 import com.wezen.cleanarchitecturedemo.core.utils.Constants
 import com.wezen.cleanarchitecturedemo.core.utils.SharePrefUtils

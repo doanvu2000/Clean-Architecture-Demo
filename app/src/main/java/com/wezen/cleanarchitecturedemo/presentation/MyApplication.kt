@@ -1,4 +1,4 @@
-package com.wezen.cleanarchitecturedemo.base
+package com.wezen.cleanarchitecturedemo.presentation
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

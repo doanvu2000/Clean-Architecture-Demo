@@ -1,8 +1,8 @@
 package com.wezen.cleanarchitecturedemo.domain.repository
 
-import com.wezen.cleanarchitecturedemo.domain.model.DistrictEntity
-import com.wezen.cleanarchitecturedemo.domain.model.ProvinceEntity
-import com.wezen.cleanarchitecturedemo.domain.model.WardEntity
+import com.wezen.cleanarchitecturedemo.data.model.DistrictEntity
+import com.wezen.cleanarchitecturedemo.data.model.ProvinceEntity
+import com.wezen.cleanarchitecturedemo.data.model.WardEntity
 
 interface ProvinceRepository {
     suspend fun getAllProvince(): List<ProvinceEntity>

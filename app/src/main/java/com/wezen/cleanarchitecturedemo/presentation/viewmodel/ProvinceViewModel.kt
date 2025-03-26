@@ -6,9 +6,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.wezen.cleanarchitecturedemo.core.utils.AppLogger
 import com.wezen.cleanarchitecturedemo.core.utils.Constants
-import com.wezen.cleanarchitecturedemo.domain.model.DistrictEntity
-import com.wezen.cleanarchitecturedemo.domain.model.ProvinceEntity
-import com.wezen.cleanarchitecturedemo.domain.model.WardEntity
+import com.wezen.cleanarchitecturedemo.data.model.DistrictEntity
+import com.wezen.cleanarchitecturedemo.data.model.ProvinceEntity
+import com.wezen.cleanarchitecturedemo.data.model.WardEntity
 import com.wezen.cleanarchitecturedemo.domain.usecase.GetAllProvinceUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch

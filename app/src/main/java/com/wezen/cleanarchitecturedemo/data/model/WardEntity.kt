@@ -1,11 +1,11 @@
-package com.wezen.cleanarchitecturedemo.domain.model
+package com.wezen.cleanarchitecturedemo.data.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "districts")
-data class DistrictEntity(
+@Entity(tableName = "wards")
+data class WardEntity(
     @PrimaryKey
     @ColumnInfo(name = "_id")
     val id: String = "",
@@ -18,11 +18,11 @@ data class DistrictEntity(
     @ColumnInfo(name = "parent_code")
     val parentCode: Int = 0,
     @ColumnInfo("path")
-    val path: String = "",
+    val path: String,
     @ColumnInfo(name = "path_with_type")
-    val pathWithType: String = "",
+    val pathWithType: String,
     @ColumnInfo("slug")
-    val slug: String = "",
+    val slug: String,
     @ColumnInfo("type")
-    val type: String = ""
+    val type: String
 )

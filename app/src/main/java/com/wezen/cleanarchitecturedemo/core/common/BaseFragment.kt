@@ -1,4 +1,4 @@
-package com.wezen.cleanarchitecturedemo.base
+package com.wezen.cleanarchitecturedemo.core.common
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -1,4 +1,4 @@
-package com.wezen.cleanarchitecturedemo.base
+package com.wezen.cleanarchitecturedemo.core.common
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding

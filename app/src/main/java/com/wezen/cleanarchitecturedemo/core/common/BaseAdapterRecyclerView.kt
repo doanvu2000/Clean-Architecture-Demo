@@ -1,4 +1,4 @@
-package com.wezen.cleanarchitecturedemo.base
+package com.wezen.cleanarchitecturedemo.core.common
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater

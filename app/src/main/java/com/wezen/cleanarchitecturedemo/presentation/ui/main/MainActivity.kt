@@ -1,4 +1,4 @@
-package com.wezen.cleanarchitecturedemo.ui.main
+package com.wezen.cleanarchitecturedemo.presentation.ui.main
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -7,11 +7,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.viewpager2.widget.ViewPager2
 import com.wezen.cleanarchitecturedemo.R
 import com.wezen.cleanarchitecturedemo.databinding.ActivityMainBinding
-import com.wezen.cleanarchitecturedemo.domain.model.ProvinceEnum
+import com.wezen.cleanarchitecturedemo.data.model.ProvinceEnum
 import com.wezen.cleanarchitecturedemo.presentation.viewmodel.ProvinceViewModel
 import com.wezen.dmv.base.screen.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
